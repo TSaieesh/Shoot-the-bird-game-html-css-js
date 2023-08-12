@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Shoot The Bird</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./images/birdFavIcon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="rotate-message">
+        <p>Please rotate your phone to landscape mode for the best experience.</p>
+    </div>
+    <h1>SHOOT THE PICHUKA</h1>
+    <div class="container"> 
+        <div>
+            <!-- importing the image -->
+            <img src="./images/30.gif">
+        </div>
+        <div class="s-container">
+            <!-- Getting Details from Player -->
+            <div>
+                <form action="./html/game.html">
+                    <input type="text" placeholder="Enter Player Name" autocomplete="off" id="name1" required><br><br>
+                    <input type="submit" class="home-button" value="Play" id="sub" onclick="testJS()">
+                </form>
+                <button id="restart" class="home-button"  value="Reset" onclick="reset()">Reset</button>
+            </div>
+            <div class="highScoreBox">
+                <h2 id="hs">Highest Score</h2>
+                <p id="hname" class="highScore"></p>
+                <p id="hscore" class="highScore"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

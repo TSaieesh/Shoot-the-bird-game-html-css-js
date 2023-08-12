@@ -1,0 +1,94 @@
+body{
+    background-image: url('../images/bg3.png');
+    text-align: center;
+    display: grid;
+}
+.rotate-message{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.rotate-message p{
+    margin: 30px;
+    text-shadow: 5px 5px 5px black;
+}
+#recrdMessage{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 38px;
+    text-transform: capitalize;
+    text-shadow: 5px 5px 15px white;
+}
+.lost{
+    margin: 70px auto 70px auto;
+    font-size: 55px;
+    color: rgb(144, 3, 3);
+    width: 315px;
+    transform: rotate(-10deg);
+    background-color: transparent;
+    border: 7px solid rgb(144, 3, 3);
+    text-shadow: 5px 5px 55px orange;
+    box-shadow: 5px 5px 95px orange;
+    border-radius: 7px;
+}
+.win{
+    margin: 70px auto 70px auto;
+    font-size: 55px;
+    color: green;
+    width: 315px;
+    transform: rotate(-10deg);
+    background-color: transparent;
+    border: 7px solid green;
+    text-shadow: 5px 5px 55px greenyellow;
+    box-shadow: 5px 5px 95px greenyellow;
+    border-radius: 7px;
+}
+.mess{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-shadow: 5px 5px 15px gray;
+
+}
+#submit,#button{
+    padding: 10px;
+    margin: 2px;
+    border:2px solid white;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    width: 100px;
+    display: inline-block;
+}
+#submit:hover,#button:hover{
+    background-color: grey;
+    color: black;
+    border-color: black;
+    cursor: pointer;
+}
+
+@media (orientation:portrait){
+     .rotate-message{
+        display: flex;
+     }
+}
+
+@media screen and (max-height:480px) {
+    #recrdMessage{
+        font-size: 23px;
+    }
+    .lost, .win{
+        font-size: 40px;
+    }
+    .mess{
+        font-size: 20px;
+    }
+}

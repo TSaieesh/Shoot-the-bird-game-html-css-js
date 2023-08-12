@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Shoot The Bird</title>
+  <link rel="stylesheet" href="../css/game.css">
+  <link rel="icon" href="../images/birdFavIcon.png" type="image/x-icon">
+</head>
+<body onload="showPopup()">
+  <div class="rotate-message">
+    <p>Please rotate your phone to landscape mode for the best experience.</p>
+  </div>
+  <audio src="../audio/bgmusic.mp3" loop autoplay></audio>
+  <div id="div1">
+    <h1 id="timer"></h1>
+    <canvas id="gameCanvas" width="1500" height="500">
+      <h1 id="timer">time runner</h1>
+    </canvas>
+    <div id="popup">
+      <p id="welcome  "><span class="tit">SHOOT THE PICHUKA</span><br/><br/><span id="txt">Welcome <span id="pname"></span></br>You need to kill 25 birds in 20 seconds.</span></p>
+      <button id="closeBtn">Let's Play</button>
+    </div>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>
