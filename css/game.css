@@ -21,6 +21,9 @@ body{
   justify-content: center;
   z-index: 9999;
 }
+.rotate-message i{
+    font-size:25px;
+}
 .rotate-message p{
   margin: 30px;
   text-shadow: 5px 5px 5px black;
@@ -91,6 +94,6 @@ h1{
 
 @media (orientation:portrait){
   .rotate-message{
-     display: flex;
+     display: grid;
   }
 }
